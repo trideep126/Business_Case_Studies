@@ -1,6 +1,6 @@
 import shap
 import pandas as pd
-def production_score_application(application_data,model,threshold=None):
+def production_score_application(application_data,model,threshold=None,X_train=None,optimal_threshold=None):
     if threshold is None:
         threshold = optimal_threshold
 

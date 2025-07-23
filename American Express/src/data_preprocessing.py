@@ -35,12 +35,16 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
         if df[col].isna().sum() > 0:
             df[col].fillna(df[col].mode()[0],inplace=True)
 
+    return df
+
 
 def feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
     #Engineer new features
     df['loan_to_value_ratio'] = df['loan_amount'] / df['property_value']
     df['interest_burden'] = df['rate_of_interest'] / df['loan_amount'] * 100
     df['risk_adjusted_ltv'] = df['lifetime_value'] / (1 + df['debt_to_income_ratio'])
+
+    return df
 
 def feature_selection(df: pd.DataFrame) -> pd.DataFrame:
     #Select relevant features

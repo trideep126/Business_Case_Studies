@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.metrics import roc_auc_score, confusion_matrix
+from sklearn.metrics import roc_auc_score, confusion_matrix, roc_curve
 from sklearn.model_selection import cross_val_score
 
 def calculate_business_impact(y_test, y_pred, y_proba):
@@ -118,11 +118,11 @@ def optimize_risk_threshold(y_test,y_proba,cost_fn=8000,cost_fp=2200):
 
     return optimal_threshold, results_df
 
-def executive_dashboard():
+def executive_dashboard(y_test,y_proba, business_impact, feature_importance, threshold_results, optimal_threshold):
 
     fig, axes = plt.subplots(2, 2, figsize=(15, 10))
 
-    fpr, tpr, _ = roc_curve(y_test, y_proba_catb)
+    fpr, tpr, _ = roc_curve(y_test, y_proba)
     axes[0, 0].plot(fpr, tpr, color='darkorange', lw=2, label=f'ROC (AUC = {business_impact["auc_score"]:.3f})')
     axes[0, 0].plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
     axes[0, 0].set_xlabel('False Positive Rate')
@@ -161,7 +161,7 @@ def executive_dashboard():
     plt.savefig('amex_executive_dashboard.png', dpi=300, bbox_inches='tight')
     plt.show()
 
-def generate_model_card():
+def generate_model_card(business_impact,optimal_threshold,feature_importance):
   model_card = f"""
 
   MODEL OVEVIEW:
