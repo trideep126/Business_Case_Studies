@@ -49,17 +49,23 @@ CatBoost Ensemble Results:
 
 ```
 ├── notebooks/
-│   ├── 01_exploratory_data_analysis.ipynb
-│   ├── 02_boosting_models_comparison.ipynb
-│   └── 03_amex_enhancement_pipeline.ipynb
+│   ├── exploratory_data_analysis.ipynb
+│   ├── feature_engineering_and_selection.ipynb
+│   ├── model_comparison_and_evaluation.ipynb
+│   └── amex_enhancement_pipeline.ipynb
 ├── src/
+│   ├── data_ingestion.py
 │   ├── data_preprocessing.py
-│   ├── model_training.py
+│   ├── training_model.py
 │   ├── business_impact_calculator.py
-│   └── production_scorer.py
+│   └── production_score.py
 ├── models/
 │   ├── catboost_final_model.pkl
 │   └── shap_explainer.pkl
+├── docs/
+│   ├── feature_description.pdf
+│   ├── business_workflow.pdf
+│   └── dataflow_diagram.pdf
 ├── reports/
 │   ├── model_card.txt
 │   ├── business_impact_report.pdf
