@@ -1,0 +1,307 @@
+{
+  "clv_metrics": {
+    "TransactionAmount_mean": {
+      "0": 403.13,
+      "1": 364.94,
+      "2": 389.17
+    },
+    "TransactionAmount_count": {
+      "0": 29990,
+      "1": 108755,
+      "2": 57183
+    },
+    "TransactionAmount_std": {
+      "0": 197.33,
+      "1": 187.82,
+      "2": 193.24
+    },
+    "TransactionAmount_sum": {
+      "0": 12089761.45,
+      "1": 39689235.68,
+      "2": 22253858.33
+    },
+    "CustAccountBalance_mean": {
+      "0": 44791.61,
+      "1": 6430.9,
+      "2": 22578.42
+    },
+    "CustAccountBalance_std": {
+      "0": 7382.88,
+      "1": 4117.73,
+      "2": 5418.72
+    },
+    "Age_mean": {
+      "0": 38.51,
+      "1": 37.12,
+      "2": 38.16
+    },
+    "Age_std": {
+      "0": 5.04,
+      "1": 4.88,
+      "2": 4.97
+    },
+    "BalTransRatio_mean": {
+      "0": 0.01,
+      "1": 0.13,
+      "2": 0.02
+    },
+    "BalTransRatio_std": {
+      "0": 0.0,
+      "1": 0.17,
+      "2": 0.01
+    },
+    "avg_monthly_transactions": {
+      "0": 2499.1666666666665,
+      "1": 9062.916666666666,
+      "2": 4765.25
+    },
+    "annual_transaction_volume": {
+      "0": 145077137.39999998,
+      "1": 476270828.15999997,
+      "2": 267046299.95999998
+    },
+    "annual_transaction_revenue": {
+      "0": 2176157.0609999998,
+      "1": 7144062.4224,
+      "2": 4005694.4993999996
+    },
+    "annual_balance_revenue": {
+      "0": 895.8322000000001,
+      "1": 128.618,
+      "2": 451.5684
+    },
+    "total_annual_revenue_per_customer": {
+      "0": 2177052.8932,
+      "1": 7144191.040399999,
+      "2": 4006146.0678
+    },
+    "estimated_lifespan_years": {
+      "0": 3.5,
+      "1": 5.2,
+      "2": 4.1
+    },
+    "customer_lifetime_value": {
+      "0": 6857716.61358,
+      "1": 33434814.069072,
+      "2": 14782678.990181997
+    }
+  },
+  "business_profiles": {
+    "Segment_0": {
+      "customer_count": 29990,
+      "percentage_of_base": 15.306643256706545,
+      "avg_account_balance": 44791.60808436145,
+      "avg_transaction_amount": 403.12642380793596,
+      "transaction_frequency": "29990",
+      "gender_split": {
+        "1": 0.6934644881627209,
+        "0": 0.3065355118372791
+      },
+      "age_range": "22-50",
+      "avg_age": 38.50680226742247,
+      "top_locations": {
+        "MUMBAI": 4363,
+        "BANGALORE": 3206,
+        "NEW DELHI": 3154
+      }
+    },
+    "Segment_1": {
+      "customer_count": 108755,
+      "percentage_of_base": 55.50763545792332,
+      "avg_account_balance": 6430.895895820881,
+      "avg_transaction_amount": 364.94171008229506,
+      "transaction_frequency": "108755",
+      "gender_split": {
+        "1": 0.740306192818721,
+        "0": 0.25969380718127905
+      },
+      "age_range": "18-50",
+      "avg_age": 37.12391154429682,
+      "top_locations": {
+        "BANGALORE": 13471,
+        "MUMBAI": 13091,
+        "GURGAON": 9371
+      }
+    },
+    "Segment_2": {
+      "customer_count": 57183,
+      "percentage_of_base": 29.185721285370136,
+      "avg_account_balance": 22578.42096060018,
+      "avg_transaction_amount": 389.16912946155327,
+      "transaction_frequency": "57183",
+      "gender_split": {
+        "1": 0.6994386443523425,
+        "0": 0.3005613556476575
+      },
+      "age_range": "18-50",
+      "avg_age": 38.15564066243464,
+      "top_locations": {
+        "BANGALORE": 7563,
+        "MUMBAI": 6955,
+        "GURGAON": 6112
+      }
+    }
+  },
+  "product_recommendations": {
+    "Segment_0": [
+      {
+        "product": "Credit_Card",
+        "affinity_score": 0.3,
+        "expected_adopters": 8997,
+        "projected_revenue": 10796400.0,
+        "acquisition_cost": 1349550.0,
+        "roi": 7.0
+      },
+      {
+        "product": "Personal_Loan",
+        "affinity_score": 0.2,
+        "expected_adopters": 5998,
+        "projected_revenue": 14395200.0,
+        "acquisition_cost": 1799400.0,
+        "roi": 7.0
+      },
+      {
+        "product": "Investment_Portfolio",
+        "affinity_score": 0.1,
+        "expected_adopters": 2999,
+        "projected_revenue": 10796400.0,
+        "acquisition_cost": 1499500.0,
+        "roi": 6.2
+      },
+      {
+        "product": "Mobile_Banking_Plus",
+        "affinity_score": 0.7,
+        "expected_adopters": 20993,
+        "projected_revenue": 7557480.0,
+        "acquisition_cost": 1049650.0,
+        "roi": 6.2
+      },
+      {
+        "product": "Premium_Banking",
+        "affinity_score": 0.1,
+        "expected_adopters": 2999,
+        "projected_revenue": 14395200.0,
+        "acquisition_cost": 2399200.0,
+        "roi": 5.0
+      }
+    ],
+    "Segment_1": [
+      {
+        "product": "Credit_Card",
+        "affinity_score": 0.8,
+        "expected_adopters": 87004,
+        "projected_revenue": 104404800.0,
+        "acquisition_cost": 13050600.0,
+        "roi": 7.0
+      },
+      {
+        "product": "Personal_Loan",
+        "affinity_score": 0.6,
+        "expected_adopters": 65253,
+        "projected_revenue": 156607200.0,
+        "acquisition_cost": 19575900.0,
+        "roi": 7.0
+      },
+      {
+        "product": "Investment_Portfolio",
+        "affinity_score": 0.9,
+        "expected_adopters": 97879,
+        "projected_revenue": 352366200.0,
+        "acquisition_cost": 48939750.0,
+        "roi": 6.2
+      },
+      {
+        "product": "Mobile_Banking_Plus",
+        "affinity_score": 0.5,
+        "expected_adopters": 54377,
+        "projected_revenue": 19575900.0,
+        "acquisition_cost": 2718875.0,
+        "roi": 6.2
+      },
+      {
+        "product": "Premium_Banking",
+        "affinity_score": 0.8,
+        "expected_adopters": 87004,
+        "projected_revenue": 417619200.0,
+        "acquisition_cost": 69603200.0,
+        "roi": 5.0
+      }
+    ],
+    "Segment_2": [
+      {
+        "product": "Credit_Card",
+        "affinity_score": 0.6,
+        "expected_adopters": 34309,
+        "projected_revenue": 41171759.99999999,
+        "acquisition_cost": 5146469.999999999,
+        "roi": 7.0
+      },
+      {
+        "product": "Personal_Loan",
+        "affinity_score": 0.7,
+        "expected_adopters": 40028,
+        "projected_revenue": 96067440.0,
+        "acquisition_cost": 12008430.0,
+        "roi": 7.0
+      },
+      {
+        "product": "Investment_Portfolio",
+        "affinity_score": 0.4,
+        "expected_adopters": 22873,
+        "projected_revenue": 82343520.0,
+        "acquisition_cost": 11436600.0,
+        "roi": 6.2
+      },
+      {
+        "product": "Mobile_Banking_Plus",
+        "affinity_score": 0.8,
+        "expected_adopters": 45746,
+        "projected_revenue": 16468704.0,
+        "acquisition_cost": 2287320.0,
+        "roi": 6.2
+      },
+      {
+        "product": "Premium_Banking",
+        "affinity_score": 0.3,
+        "expected_adopters": 17154,
+        "projected_revenue": 82343519.99999999,
+        "acquisition_cost": 13723919.999999998,
+        "roi": 5.0
+      }
+    ]
+  },
+  "ab_testing_design": {
+    "Segment_0": {
+      "total_eligible_customers": "29990",
+      "control_group_size": 14995,
+      "test_group_size": "14995",
+      "test_duration": 60,
+      "expected_revenue_impact": "2699100",
+      "experiment_name": "Mobile Banking Adoption"
+    },
+    "Segment_1": {
+      "total_eligible_customers": "108755",
+      "control_group_size": 54377,
+      "test_group_size": "54378",
+      "test_duration": 90,
+      "expected_revenue_impact": "65253600",
+      "experiment_name": "Premium Product Cross-sell"
+    },
+    "Segment_2": {
+      "total_eligible_customers": "57183",
+      "control_group_size": 28591,
+      "test_group_size": "28592",
+      "test_duration": 45,
+      "expected_revenue_impact": "22873600",
+      "experiment_name": "Credit Product Optimization"
+    }
+  },
+  "business_impact_summary": {
+    "current_customer_base_value": 4687184058018.767,
+    "product_cross_sell_opportunity": 156372960.0,
+    "ab_testing_uplift_potential": "90826300",
+    "churn_prevention_value": 23435920290.093838,
+    "total_additional_value_potential": 23683119550.093838,
+    "roi_multiple": 0.005052739396819099
+  }
+}
