@@ -2,10 +2,10 @@
 
 ## Executive Summary
 
-Built an advanced credit risk assessment system achieving **98% accuracy** and **$2.1M annual savings** per 100K applications using ensemble machine learning. This case study demonstrates world-class ML engineering applied to American Express-style credit card underwriting.
+Built an advanced credit risk assessment system achieving **97% accuracy** and **$4.49M annual savings** per 100K applications using ensemble machine learning. This case study demonstrates world-class ML engineering applied to American Express-style credit card underwriting.
 
 **Key Achievements:**
-- 📊 **97% Prediction Accuracy** with CatBoost ensemble
+- 📊 **97% Prediction Accuracy** with AdaBoost ensemble
 - 💰 **101% ROI** through optimized risk-return balance
 - 🔍 **Full Model Explainability** with SHAP analysis
 - 📈 **Production-Ready** deployment pipeline
@@ -15,10 +15,10 @@ Built an advanced credit risk assessment system achieving **98% accuracy** and *
 
 | Metric | Value | Business Significance |
 |--------|-------|---------------------|
-| **Annual Net Benefit** | $4.7M | Direct bottom-line impact |
-| **Charge-off Rate** | 3.58% | Just above the industry benchmark (2.5%) |
-| **Processing Automation** | 85% | Reduced manual underwriting |
-| **False Rejection Reduction** | 15% | Captured additional revenue |
+| **Annual Net Benefit** | $4.54M | Direct bottom-line impact |
+| **Charge-off Rate** | 4.95% | Reduced risk of default |
+| **Processing Savings** | $410K | Savings from automation |
+| **Prevented Losses** | $4.49M | Annual Losses prevented |
 
 ## Technical Architecture
 
@@ -30,20 +30,21 @@ Built an advanced credit risk assessment system achieving **98% accuracy** and *
 
 ### Model Performance
 ```
-CatBoost Ensemble Results:
-├── Accuracy: 94%
+AdaBoost Ensemble Results:
+├── Accuracy: 92%
 ├── Precision: 83%
-├── Recall: 89%
-├── F1-Score: 86%
+├── Recall: 85%
+├── F1-Score: 84%
 └── AUC: 0.97
+└── PR-AUC: 0.93
 ```
 
 ### Risk Drivers (SHAP Analysis)
-1. **Rate of Interest** (65% importance) - Primary risk indicator
-2. **Credit Type** (13% importance)
-3. **Debt-to-Income** (6% importance)
-4. **Lifetime Value** (3% importance)  
-5. **Loan Type** (2% importance)
+1. **Rate of Interest** (60% importance) - Primary risk indicator
+2. **Credit Type** (15% importance)
+3. **Loan-to-value Ratio** (6% importance)
+4. **Debt-to-income Ratio** (5% importance)  
+5. **Risk-adjusted ltv** (4% importance)
 
 ## Project Structure
 
@@ -122,7 +123,7 @@ CatBoost Ensemble Results:
 
 | Component | Technology | Purpose |
 |-----------|------------|---------|
-| **ML Framework** | CatBoost, XGBoost, LightGBM | Ensemble modeling |
+| **ML Framework** | CatBoost, XGBoost, Adaboost | Ensemble modeling |
 | **Explainability** | SHAP | Model interpretation |
 | **Validation** | Scikit-learn | Cross-validation, metrics |
 | **Visualization** | Matplotlib, Seaborn | Business dashboards |
